@@ -1,30 +1,154 @@
-# DevTrails
-**Requirement Detail:**
+**GigGuard – AI-Powered Income Protection for Delivery Partners**
 
-1. Heavy rains hit a part of chennai and the roads are under a foot of water. Naturally, it is too dangerous for a bike to pass through. Considering the rider misses around 5 hours of work during the busy dinner time, we make sure that the software notes the rainfall data for that specific pincode and pays the rider for those hours automatically.
-2. Let us consider a sudden VIP visit or a road block due to construction in the prime areas of the city. The rider is essentially working but cannot reach any restaurants or the customers in the said zone. Our system detects the zone through data and triggers a payout for the lost time.
+🛡️ Protecting delivery partners from income loss due to real-world disruptions.
 
-**Application Workflow:**
-1. Sign-up: The workers register via a mobile app and authenticate their ID.
-2. Profiling: Assigning a risk weight based on the location.
-3. Weekly-Plan: This Weekly Premium model is so that it aligns with the weekly payout cycles.
-4. Parametric trigger: When the threshold is breached, we make sure to validate the workers online status. Once confimed, the system calculates the wage based on past data average and makes an automatic transfer.
 
-**Weekly Premium Model:**
-We have structured our financial model on a Weekly basis to align with how food delivery partners in Chennai receive their payouts.
-1. Instead of a heavy monthly cost, the rider pays a small subscription fee, for example: ₹25–₹40 every Monday. The cost is recalculated every week based on upcoming data.
-2. If a rider works in a flood-prone area, it is  made sure that the system adjusts slightly to reflect the higher chance of a payout.
-3. The small fee ensures that the rider never feels financial burden considering the high amount they might have to pay on a monthly basis.
+**🔹 Problem Statement**
 
-**Parametric Triggers:**
-The platform is made to make sure that the rider is not made to file a claim and the system triggers itself based on data.
-1. Intense Rainfall: A payout is automatically triggered when rain exceeds 30mm within a 60-minute period, identifying conditions where road navigation becomes unsafe.
-2. Extreme Heat: The system activates a heatwave claim when the Chennai Heat Index crosses 45°C, protecting riders who must stop working during peak afternoon hours for safety.
-3. Social & Civil Disruption: We plan to utilize real-time traffic and news APIs to trigger coverage when a specific delivery zone is blocked due to unplanned strikes or political rallies.
-4. Platform Technical Failure: In the event of a major delivery app server crash lasting longer than 45 minutes, our platform compensates for the lost earning window during that period.
-5. Strict Coverage Scope: All triggers are exclusively designed to cover lost income and strictly exclude health insurance, life insurance, or vehicle repair costs.
+Food delivery partners frequently experience income losses due to uncontrollable external disruptions, including heavy rainfall, extreme heat, traffic blockages, and platform outages. These events reduce working hours and can lead to a 20–30% loss of earnings, leaving no financial safety net.
 
-**Mobile App:**
-We have chosen a Mobile Application because it allows us to use GPS to verify that a rider was actually present in a disrupted area during a trigger event.
-1. Fraud Prevention: A mobile platform enables device fingerprinting and helps detect spoofing which is essential for preventing duplicate or fake claims.
-2. Instant Accessibility: Since most food delivery partners rely on smartphones for their daily tasks, a mobile app provides the most seamless user experience for receiving an automatic payout notifications.
+**Core Idea:**  
+**We insure lost income, not events.**
+
+
+**👤 Persona-Based Scenarios**
+
+**🌧️ Heavy Rainfall Scenario (Chennai)**
+Heavy rains flood roads, making it unsafe for riders to operate. A delivery partner may lose up to **5 hours of work during peak dinner time**.  
+➡️ Our system detects rainfall at the pin code level and automatically compensates for lost working hours.
+
+---
+
+**🚧 Urban Disruption Scenario**
+Sudden VIP movements, political rallies, or construction block key delivery zones. Riders remain active but cannot complete deliveries.  
+➡️ Our system identifies zone-level disruptions and triggers payouts for the affected duration.
+
+**🔄 Application Workflow**
+
+1. 📝 User Signup & Profile Creation  
+2. 🤖 AI-Based Risk Profiling (location + historical data)  
+3. 💰 Weekly Premium Calculation  
+4. 📄 Policy Activation  
+5. 🌐 Real-Time Disruption Monitoring (APIs)  
+6. ⚡ Parametric Trigger Detection  
+7. 📊 Automatic Claim Generation  
+8. 💸 Instant Payout Processing  
+
+**💰 Weekly Premium Model**
+
+We adopt a **weekly pricing model** aligned with gig workers’ earning cycles.
+
+**Formula: Weekly Premium = Base Rate + Risk Adjustment**
+
+
+**📌 Breakdown:**
+- **Base Rate:** ₹25–₹40 per week  
+- **Risk Adjustment Factors:**
+  - Location risk (flood-prone / high traffic zones)  
+  - Weather forecast (rain, heat)  
+  - Historical disruption patterns  
+
+
+✅ Affordable, dynamic, and personalised pricing.
+**⚡ Parametric Triggers**
+
+Our system removes the need for manual claims by automatically triggering payouts:
+
+- 🌧 **Intense Rainfall**  
+  - Trigger: Rainfall > 30 mm within 60 minutes  
+
+- 🌡 **Extreme Heat**  
+  - Trigger: Heat Index > 45°C  
+
+- 🚧 **Social & Civil Disruptions**  
+  - Trigger: Roadblocks, strikes, restricted zones  
+
+- 📉 **Platform Downtime**  
+  - Trigger: App outage > 45 minutes  
+
+- ⚠️ **Strict Coverage Scope**  
+  - Covers **loss of income only**  
+  - Excludes health, life, and vehicle insurance  
+
+**🤖 AI/ML Integration**
+
+**🔹 Risk Prediction Model**
+- Inputs:
+  - Location  
+  - Historical weather  
+  - Traffic patterns  
+- Output:
+  - Probability of disruption  
+
+**🔹 Dynamic Pricing Model**
+- Adjusts weekly premium based on:
+  - Risk score  
+  - Forecasted disruptions  
+
+**🔹 Fraud Detection System**
+- Detects:
+  - GPS spoofing  
+  - Fake inactivity  
+  - Duplicate claims 
+
+**🌐 Platform Choice: Web Application**
+
+We chose a **web-based platform** for Phase 1 because:
+
+- 📊 Better visualisation of dashboards  
+- ⚡ Easier demonstration of triggers and payouts  
+- 🧑‍💼 Supports admin monitoring  
+- 🚀 Faster prototyping and deployment  
+
+**🏗️ Tech Stack**
+
+- **Frontend:** React.js  
+- **Backend:** Node.js / Django  
+- **Database:** Supabase  
+- **AI/ML:** Python (scikit-learn / mock models)  
+
+**🔌 APIs:**
+- Weather API (OpenWeather)  
+- Google Maps (Traffic Data)  
+- Razorpay (Test Mode)
+
+**🧩 System Architecture**
+
+- 🖥️ **Frontend:** React Web App  
+- ⚙️ **Backend:** Node.js APIs  
+- 🧠 **AI Engine:** Risk scoring & fraud detection  
+- 🌐 **Trigger Engine:** API-based disruption detection  
+- 💳 **Payment System:** Simulated payout system  
+
+**🚀 Innovation Highlights**
+
+- ✅ Zero-touch claim system (fully automated payouts)  
+- ✅ Earnings-based payout calculation  
+- ✅ Hyper-local risk scoring  
+- ✅ Real-time parametric trigger detection  
+- ✅ Built-in fraud detection mechanisms  
+
+**📊 Key Metrics**
+
+- ⏱ Claim processing time  
+- 🔍 Fraud detection accuracy  
+- 📈 Weekly user retention  
+- 💰 Loss ratio  
+
+**🌐 Live Prototype**
+
+🔗 **https://v0-gig-guard.vercel.app** 
+
+**🎯 Vision**
+
+To build a scalable, AI-driven safety net that protects gig workers from unpredictable income disruptions, ensuring financial stability in India’s rapidly growing gig economy.
+
+**👨‍💻 Team Mambo**
+Building the future of **gig economy insurance** 🚀
+
+**Team Members:**
+1. Shruthi Saravanan
+2. Ardhra Parakkal Thachapully Shajisagar
+3. Naresh Ponmani
+4. Devansh Shishodia
+5. Akshaya Raj
