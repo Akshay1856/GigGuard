@@ -1,5 +1,6 @@
 # DevTrails
 **Requiremtnt Detail:**
+
 Scenario 1: Environmental Issue
 Heavy rains hit a part of chennai and the roads are under a foot of water. naturally, it is too dangerous for a bike to pass through. Considering the rider misses around 5 hours of work during the busy dinner time, we make sure that the software notes the rainfall data for that specific pincode and pays the rider for those hours automatically.
 Scenario 2: Social Issue
@@ -25,7 +26,7 @@ The platform is made to make sure that the rider is not made to file a claim and
 4. Platform Technical Failure: In the event of a major delivery app server crash lasting longer than 45 minutes, our platform compensates for the lost earning window during that stage.
 5. Strict Coverage Scope: All triggers are exclusively designed to cover Lost income and strictly exclude health insurance, life insurance, or vehicle repair costs.
 
-**Mobile App: **
+**Mobile App:**
 We have chosen a Mobile Application because it allows us to use GPS to verify that a rider was actually present in a disrupted area during a trigger event.
 1. Fraud Prevention: A mobile platform enables device fingerprinting and helps detect spoofing which is essential for preventing duplicate or fake claims.
 2. Instant Accessibility: Since 100% of food delivery partners rely on smartphones for their daily tasks, a mobile app provides the most seamless user experience for receiving an automatic payout notifications.
