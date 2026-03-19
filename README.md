@@ -3,9 +3,8 @@
 
 Scenario 1: Environmental Issue
 1. Heavy rains hit a part of chennai and the roads are under a foot of water. Naturally, it is too dangerous for a bike to pass through. Considering the rider misses around 5 hours of work during the busy dinner time, we make sure that the software notes the rainfall data for that specific pincode and pays the rider for those hours automatically.
-
 Scenario 2: Social Issue
-3. Let us consider a sudden VIP visit or a road block due to construction in the prime areas of the city. The rider is essentially working but cannot reach any restaurants or the customers in the said zone. Our system detects the zone through data and triggers a payout for the lost time.
+2. Let us consider a sudden VIP visit or a road block due to construction in the prime areas of the city. The rider is essentially working but cannot reach any restaurants or the customers in the said zone. Our system detects the zone through data and triggers a payout for the lost time.
 
 **Application Workflow:**
 1. Sign-up: The workers register via a mobile app and authenticate their ID.
